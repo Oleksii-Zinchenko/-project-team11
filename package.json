@@ -1,0 +1,25 @@
+{
+  "name": "-project-team11",
+  "version": "1.0.0",
+  "main": "vite.config.js",
+  "devDependencies": {
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oleksii-Zinchenko/-project-team11.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Oleksii-Zinchenko/-project-team11/issues"
+  },
+  "homepage": "https://github.com/Oleksii-Zinchenko/-project-team11#readme",
+  "description": ""
+}
