@@ -1,5 +1,5 @@
 export function loadMobileMenu() {
-  fetch("/partials/mobile-menu.html")
+  fetch("../partials/mobile-menu.html")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Ошибка загрузки мобильного меню");
@@ -7,9 +7,8 @@ export function loadMobileMenu() {
       return response.text();
     })
     .then((data) => {
-      // Вставляем содержимое в элемент с id "mobile-menu"
       document.getElementById("mobile-menu").innerHTML = data;
-      initializeMobileMenu(); // Инициализируем функционал меню
+      initializeMobileMenu();
     })
     .catch((error) => {
       console.error("Ошибка загрузки мобильного меню:", error);
