@@ -1,6 +1,6 @@
 // header.js
 export function loadHeader() {
-  fetch("./partials/header.html")
+  fetch("../partials/header.html")
     .then((response) => {
       if (!response.ok) {
         throw new Error("Ошибка загрузки");

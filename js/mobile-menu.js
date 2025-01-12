@@ -2,12 +2,18 @@ export function loadMobileMenu() {
   fetch("../partials/mobile-menu.html")
     .then((response) => {
       if (!response.ok) {
-        throw new Error("Ошибка загрузки мобильного меню");
+        throw new Error(
+          `Ошибка загрузки: ${response.status} - ${response.statusText}`
+        );
       }
       return response.text();
     })
     .then((data) => {
-      document.getElementById("mobile-menu").innerHTML = data;
+      console.log("Файл успешно загружен:", data);
+      const mobileMenuContainer = document.getElementById("mobile-menu");
+      mobileMenuContainer.innerHTML = data;
+
+      // Инициализируем мобильное меню после загрузки
       initializeMobileMenu();
     })
     .catch((error) => {
